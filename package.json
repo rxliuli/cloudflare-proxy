@@ -1,0 +1,19 @@
+{
+  "name": "cloudflare-proxy",
+  "version": "0.1.0",
+  "main": "dist/main.js",
+  "private": true,
+  "scripts": {
+    "build": "tsup src/main.ts --minify",
+    "dev": "miniflare -w",
+    "deploy": "wrangler publish"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230404.0",
+    "miniflare": "^2.13.0",
+    "reflare": "^1.1.4",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "wrangler": "^2.16.0"
+  }
+}
